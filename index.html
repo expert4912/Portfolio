@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivam Sharad Pawar | Portfolio</title>
+  <meta name="description" content="Futuristic developer portfolio of Shivam Sharad Pawar — Computer Science Engineer, Full Stack Developer, and AI Enthusiast crafting digital experiences." />
+  <meta name="author" content="Shivam Sharad Pawar" />
+  <meta name="keywords" content="Shivam Pawar, Developer Portfolio, CSE Engineer, Full Stack Developer, Satara, AI, Machine Learning" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== LOADING SCREEN ========== -->
+<div id="loader" class="loader-overlay">
+  <div class="loader-scanline"></div>
+  <div class="loader-card">
+    <div class="loader-corner tl"></div>
+    <div class="loader-corner tr"></div>
+    <div class="loader-corner bl"></div>
+    <div class="loader-corner br"></div>
+
+    <div class="loader-header">
+      <div class="loader-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pulse-icon"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+        <span>SYSTEM SECURITY: ONLINE</span>
+      </div>
+      <span class="loader-version pulse-anim">PORT_LOAD_v2.0</span>
+    </div>
+
+    <div class="loader-avatar">
+      <div class="loader-avatar-ring ring1"></div>
+      <div class="loader-avatar-ring ring2"></div>
+      <div class="loader-avatar-inner">
+        <img src="profile.jpg" alt="Shivam Portrait" />
+        <div class="scan-line-bar"></div>
+        <div class="avatar-vignette"></div>
+      </div>
+    </div>
+
+    <div class="loader-info">
+      <div class="loader-info-row">
+        <span>ID: <span class="gold">SHIVAM_PAWAR</span></span>
+        <span>MATCH: <span class="gold">99.85%</span></span>
+      </div>
+      <div class="loader-info-row">
+        <span>LOC: <span class="white">17.6868° N, 74.0183° E</span></span>
+        <span>ROLE: <span class="white">ENGINEER</span></span>
+      </div>
+    </div>
+
+    <div class="loader-progress-wrap">
+      <div class="loader-progress-label">
+        <span class="gold pulse-anim" id="load-status">DECRYPTING PROTOCOLS</span>
+        <span class="gold" id="load-percent">0%</span>
+      </div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill" id="load-bar"></div>
+      </div>
+      <div class="loader-log" id="load-log"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MAIN CONTENT ========== -->
+<div id="main" class="main-hidden">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span><span class="logo-name">SSP</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="mailto:shivampawarssp4912@gmail.com" class="nav-cta">Hire Me</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow-orb orb1"></div>
+    <div class="hero-glow-orb orb2"></div>
+    <div class="hero-scanline"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <span class="font-mono text-xs">SYSTEM ONLINE · SATARA, INDIA</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="hero-name-line">Shivam</span>
+        <span class="hero-name-line hero-name-gold">Sharad Pawar</span>
+      </h1>
+
+      <div class="hero-role-wrap">
+        <span class="hero-role-prefix font-mono">_role:</span>
+        <span class="hero-role-text" id="hero-role">Full Stack Developer</span>
+        <span class="hero-cursor">|</span>
+      </div>
+
+      <p class="hero-bio">
+        Computer Science Engineer crafting immersive digital experiences. Passionate about building
+        scalable solutions and turning complex problems into elegant code.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          View Projects
+        </a>
+        <a href="mailto:shivampawarssp4912@gmail.com" class="btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+          Contact Me
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Years<br>Learning</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="15">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Projects<br>Built</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="8">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Tech<br>Mastered</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-avatar-wrap">
+      <div class="hero-avatar-ring ring-outer"></div>
+      <div class="hero-avatar-ring ring-mid"></div>
+      <div class="hero-avatar-frame">
+        <img src="profile.jpg" alt="Shivam Sharad Pawar" class="hero-avatar-img" />
+        <div class="hero-avatar-scan"></div>
+        <div class="hero-avatar-overlay"></div>
+        <div class="hero-avatar-corner htl"></div>
+        <div class="hero-avatar-corner htr"></div>
+        <div class="hero-avatar-corner hbl"></div>
+        <div class="hero-avatar-corner hbr"></div>
+      </div>
+      <div class="hero-avatar-label">
+        <span class="font-mono text-xxs">ID_VERIFIED · SHIVAM_SSP</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="font-mono text-xxs">SCROLL DOWN</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag font-mono">// 01. ABOUT</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="about-card glass-card">
+            <div class="about-card-corner ac-tl"></div>
+            <div class="about-card-corner ac-tr"></div>
+            <div class="about-card-corner ac-bl"></div>
+            <div class="about-card-corner ac-br"></div>
+            <p class="about-p">
+              Hey! I'm <span class="gold-text">Shivam Sharad Pawar</span>, a passionate Computer Science Engineering student from <span class="gold-text">Satara, Maharashtra</span>. I love building things that live on the internet and solving real-world problems with code.
+            </p>
+            <p class="about-p">
+              My journey into tech started with a curiosity for how things work under the hood. Today, I specialize in <span class="gold-text">full-stack development</span>, with a growing interest in <span class="gold-text">AI/ML</span> and intelligent systems.
+            </p>
+            <p class="about-p">
+              When I'm not coding, I'm exploring new technologies, contributing to open-source, or leveling up my problem-solving skills on competitive programming platforms.
+            </p>
+            <div class="about-tags">
+              <span class="about-tag">🎓 CSE Student</span>
+              <span class="about-tag">💻 Developer</span>
+              <span class="about-tag">🤖 AI Enthusiast</span>
+              <span class="about-tag">📍 Satara, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info reveal">
+          <div class="info-card glass-card">
+            <h3 class="info-title font-mono">// INFO</h3>
+            <div class="info-row"><span class="info-label">Name</span><span class="info-value">Shivam Sharad Pawar</span></div>
+            <div class="info-row"><span class="info-label">Location</span><span class="info-value">Satara, Maharashtra, India</span></div>
+            <div class="info-row"><span class="info-label">Email</span><a href="mailto:shivampawarssp4912@gmail.com" class="info-link">shivampawarssp4912@gmail.com</a></div>
+            <div class="info-row"><span class="info-label">Degree</span><span class="info-value">B.E. Computer Science</span></div>
+            <div class="info-row"><span class="info-label">Status</span><span class="info-value available">🟢 Available for Opportunities</span></div>
+          </div>
+
+          <div class="terminal-card glass-card">
+            <div class="terminal-header">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+              <span class="t-title font-mono">shivam@portfolio:~</span>
+            </div>
+            <div class="terminal-body font-mono" id="terminal-body">
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+              <div class="t-line t-out">shivam_sharad_pawar</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat goals.txt</span></div>
+              <div class="t-line t-out">Build impactful software.</div>
+              <div class="t-line t-out">Master AI/ML systems.</div>
+              <div class="t-line t-out">Create beautiful UIs.</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">█</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag font-mono">// 02. SKILLS</span>
+        <h2 class="section-title">Tech Arsenal</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🖥️</span>
+            <span class="skill-cat-title font-mono">Languages</span>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>C / C++</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Java</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <span class="skill-cat-title font-mono">Web Development</span>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML / CSS</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>React.js</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Node.js</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Express.js</span><span class="skill-pct">68%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>MongoDB</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <span class="skill-cat-title font-mono">AI / ML</span>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Machine Learning</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>NumPy / Pandas</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Scikit-Learn</span><span class="skill-pct">68%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>TensorFlow</span><span class="skill-pct">55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <span class="skill-cat-title font-mono">CS Fundamentals</span>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Structures & Algorithms</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>OOP Concepts</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>DBMS</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Operating Systems</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Computer Networks</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚙️</span>
+            <span class="skill-cat-title font-mono">Tools & Platforms</span>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Git / GitHub</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Linux / CLI</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span class="skill-pct">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>MySQL</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🎯</span>
+            <span class="skill-cat-title font-mono">Soft Skills</span>
+          </div>
+          <div class="soft-skills-grid">
+            <span class="soft-skill-tag">Problem Solving</span>
+            <span class="soft-skill-tag">Team Collaboration</span>
+            <span class="soft-skill-tag">Critical Thinking</span>
+            <span class="soft-skill-tag">Communication</span>
+            <span class="soft-skill-tag">Time Management</span>
+            <span class="soft-skill-tag">Adaptability</span>
+            <span class="soft-skill-tag">Leadership</span>
+            <span class="soft-skill-tag">Continuous Learning</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag font-mono">// 03. PROJECTS</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card glass-card reveal">
+          <div class="project-card-top">
+            <div class="project-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+              <a href="#" class="project-link" title="Live Demo"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">A full-stack web application for managing student records, attendance, grades, and reports. Features role-based access for admins, teachers, and students with real-time dashboard analytics.</p>
+          <div class="project-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">Flask</span>
+            <span class="p-tag">MySQL</span>
+            <span class="p-tag">HTML/CSS</span>
+            <span class="p-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal featured-card">
+          <div class="featured-badge font-mono">⭐ FEATURED</div>
+          <div class="project-card-top">
+            <div class="project-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+              <a href="#" class="project-link" title="Live Demo"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Chatbot Assistant</h3>
+          <p class="project-desc">An intelligent conversational AI chatbot built using Python and Natural Language Processing. Capable of answering questions, understanding context, and providing smart responses using NLP models.</p>
+          <div class="project-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">NLP</span>
+            <span class="p-tag">NLTK</span>
+            <span class="p-tag">Scikit-Learn</span>
+            <span class="p-tag">Flask</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-card-top">
+            <div class="project-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+              <a href="#" class="project-link" title="Live Demo"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-desc">A fully responsive e-commerce web application with product listing, cart management, user authentication, and payment integration. Includes admin panel for inventory and order management.</p>
+          <div class="project-tags">
+            <span class="p-tag">React.js</span>
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">MongoDB</span>
+            <span class="p-tag">Express</span>
+            <span class="p-tag">JWT</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-card-top">
+            <div class="project-icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+              <a href="#" class="project-link" title="Live Demo"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+            </div>
+          </div>
+          <h3 class="project-title">Disease Prediction System</h3>
+          <p class="project-desc">A machine learning-based web app that predicts diseases based on patient symptoms. Uses multiple ML algorithms (Random Forest, SVM, Naive Bayes) with comparative accuracy analysis.</p>
+          <div class="project-tags">
+            <span class="p-tag">Python</span>
+            <span class="p-tag">Scikit-Learn</span>
+            <span class="p-tag">Pandas</span>
+            <span class="p-tag">Flask</span>
+            <span class="p-tag">ML</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag font-mono">// 04. EXPERIENCE</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">B.E. Computer Science Engineering</h3>
+                <p class="timeline-org">🎓 Engineering College, Satara</p>
+              </div>
+              <span class="timeline-date font-mono">2022 — Present</span>
+            </div>
+            <p class="timeline-desc">Pursuing Bachelor of Engineering in Computer Science. Core subjects include Data Structures, Algorithms, Operating Systems, DBMS, Computer Networks, and Software Engineering.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Computer Science</span>
+              <span class="tl-tag">Engineering</span>
+              <span class="tl-tag">Full-Time</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Full Stack Development — Self Learning</h3>
+                <p class="timeline-org">💻 Online Platforms & Projects</p>
+              </div>
+              <span class="timeline-date font-mono">2023 — Present</span>
+            </div>
+            <p class="timeline-desc">Self-taught full stack developer. Built multiple projects using React, Node.js, MongoDB, and Python. Completed online courses on web development, DSA, and machine learning.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">React</span>
+              <span class="tl-tag">Node.js</span>
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">Self-Taught</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">AI/ML Exploration</h3>
+                <p class="timeline-org">🤖 Research & Side Projects</p>
+              </div>
+              <span class="timeline-date font-mono">2024 — Present</span>
+            </div>
+            <p class="timeline-desc">Deep-diving into artificial intelligence and machine learning. Built projects involving NLP, classification models, and data analysis using Python's ML ecosystem.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Machine Learning</span>
+              <span class="tl-tag">NLP</span>
+              <span class="tl-tag">TensorFlow</span>
+              <span class="tl-tag">Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Higher Secondary (HSC) — Science</h3>
+                <p class="timeline-org">🏫 Junior College, Satara</p>
+              </div>
+              <span class="timeline-date font-mono">2020 — 2022</span>
+            </div>
+            <p class="timeline-desc">Completed HSC with Science stream (PCM + CS). Developed foundational interest in computers and programming, which led to pursuing Computer Science Engineering.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Science</span>
+              <span class="tl-tag">Mathematics</span>
+              <span class="tl-tag">Computer Science</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag font-mono">// 05. CONTACT</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <div class="glass-card contact-info-card">
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,12 2,6"></polyline></svg>
+              </div>
+              <div>
+                <span class="contact-label font-mono">EMAIL</span>
+                <a href="mailto:shivampawarssp4912@gmail.com" class="contact-value">shivampawarssp4912@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <span class="contact-label font-mono">LOCATION</span>
+                <span class="contact-value">Satara, Maharashtra, India</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <span class="contact-label font-mono">AVAILABILITY</span>
+                <span class="contact-value available">🟢 Open to Opportunities</span>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-btn" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                GitHub
+              </a>
+              <a href="#" class="social-btn" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right reveal">
+          <div class="glass-card contact-form-card">
+            <h3 class="form-title font-mono">// SEND_MESSAGE.exe</h3>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label class="form-label font-mono">NAME</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label font-mono">EMAIL</label>
+                <input type="email" id="form-email" class="form-input" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label font-mono">MESSAGE</label>
+                <textarea id="form-msg" class="form-textarea" placeholder="Write your message here..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary form-submit" id="form-submit-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span id="btn-text">Send Message</span>
+              </button>
+              <div class="form-success" id="form-success">
+                ✅ Message sent successfully! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <span class="font-mono footer-name">[SSP] Shivam Sharad Pawar</span>
+      <span class="footer-copy font-mono">Crafted with ❤️ &amp; lots of ☕ · 2026</span>
+      <a href="#hero" class="footer-top font-mono">↑ BACK TO TOP</a>
+    </div>
+  </footer>
+
+</div><!-- end #main -->
+
+<script src="script.js"></script>
+</body>
+</html>
